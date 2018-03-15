@@ -1,0 +1,4 @@
+Import-Module ActiveDirectory
+cd AD:
+Get-ADDomain -Current LoggedOnUser
+Get-ADUser -identity USER_NAME
