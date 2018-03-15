@@ -1,0 +1,4 @@
+REM Get a list of all SharePoint Site Collections
+REM Note: Run on server running SharePoint
+
+Get-SPSite -limit all -WebApplication https://yourDomain.ext | Ft -autosize -wrap | Out-File -FilePath ".\spSiteCollections.txt"
